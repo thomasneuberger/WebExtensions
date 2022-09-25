@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "57305386-5c97-46fd-819f-b9f8b1ecc30e": {
+      "ProjectGuid": "57305386-5c97-46fd-819f-b9f8b1ecc30e",
+      "DisplayName": "LoggingExtensions.Demo",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
