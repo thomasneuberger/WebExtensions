@@ -43,7 +43,7 @@ jobs:
       run: dotnet restore
       
     - name: Build
-      run: dotnet build --configuration Release --no-restore -p:Version=$BUILD_VERSION
+      run: dotnet build --configuration Release --no-restore -p:Version=${VERSION}
       
     - name: Test
       run: dotnet test /p:Configuration=Release --no-restore --no-build --verbosity normal
