@@ -32,7 +32,7 @@ jobs:
       run: echo "VERSION=${{ steps.gitversion.outputs.AssemblySemVer }}" >> $GITHUB_ENV
     
     - name: Get VERSION
-      run: echo "VERSION=${VERSION}
+      run: echo "VERSION=${VERSION}"
     
     - name: Setup .NET
       uses: actions/setup-dotnet@v2
