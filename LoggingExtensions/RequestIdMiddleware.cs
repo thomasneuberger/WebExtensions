@@ -15,10 +15,7 @@ namespace LoggingExtensions
         {
             var options = new RequestIdOptions();
 
-            if (optionsAction != null)
-            {
-                optionsAction(options);
-            }
+            optionsAction?.Invoke(options);
 
             app.Use(async (context, next) =>
             {
