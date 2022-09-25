@@ -3,6 +3,14 @@
     <PropertyGroup>
         <TargetFramework>net6.0</TargetFramework>
         <Nullable>enable</Nullable>
+        <Title>Logging Extensions</Title>
+        <Authors>Thomas Neuberger</Authors>
+        <Description>Extensions to add middleware to support logging to the ASP.NET request pipeline</Description>
+        <Copyright>Thomas Neuberger</Copyright>
+        <PackageProjectUrl>https://github.com/thomasneuberger/WebExtensions</PackageProjectUrl>
+        <PackageLicenseUrl>https://github.com/thomasneuberger/WebExtensions/blob/master/LICENSE.txt</PackageLicenseUrl>
+        <RepositoryUrl>https://github.com/thomasneuberger/WebExtensions</RepositoryUrl>
+        <PackageId>thomasneuberger.LoggingExtensions</PackageId>
     </PropertyGroup>
 
     <ItemGroup>

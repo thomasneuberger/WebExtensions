@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>thomasneuberger.LoggingExtensions</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>Thomas Neuberger</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <!-- <icon>icon.png</icon> -->
+    <projectUrl>https://github.com/thomasneuberger/WebExtensions</projectUrl>
+    <description>$description$</description>
+    <copyright>$copyright$</copyright>
+    <tags>ASP.NET Logging</tags>
+  </metadata>
+</package>

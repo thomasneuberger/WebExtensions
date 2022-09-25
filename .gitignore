@@ -1,3 +1,4 @@
+.vs
 bin/
 obj/
 /packages/
@@ -5,3 +6,4 @@ riderModule.iml
 /_ReSharper.Caches/
 
 .idea
+*.nupkg
