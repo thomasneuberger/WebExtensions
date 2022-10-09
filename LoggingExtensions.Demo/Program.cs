@@ -7,6 +7,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddRequestLoggingMiddleware();
+
 var app = builder.Build();
 
 app.UseRequestIdMiddleware();
@@ -18,9 +20,14 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.UseRequestLoggingMiddleware();
+
 app.UseHttpsRedirection();
 
 app.MapGet("/", () => Results.Ok())
     .WithName("Root");
+
+app.MapGet("/hello", (string name) => Results.Json($"Hello {name}"))
+    .WithName("SayHello");
 
 app.Run();

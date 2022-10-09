@@ -8,6 +8,9 @@ using Xunit;
 
 namespace LoggingExtensions.Test;
 
+/// <summary>
+/// Unit tests for <see cref="RequestIdMiddleware"/>
+/// </summary>
 public class RequestIdMiddlewareTests
 {
     [Fact]

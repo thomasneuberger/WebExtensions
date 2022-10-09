@@ -17,3 +17,14 @@ The Id a string that consists of 4 parts, separated by dashes.
 To use the middleware, add this line to the pipeline configuration as early as possible:
 
     app.UseRequestIdMiddleware();
+
+### RequestLoggingMiddleware
+The request logging middleware logs all requests. This includes the HTTP method, the full URL and the time it needed to be processed.
+
+To configure the middleware, add this line to the app configuration, the parameter is optional:
+
+    builder.Services.AddRequestLoggingMiddleware(options);
+
+To use the middleware, add this line to the pipeline configuration:
+
+    app.UseRequestLoggingMiddleware();
