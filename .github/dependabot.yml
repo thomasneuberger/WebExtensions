@@ -1,15 +1,10 @@
 version: 2
 updates:
   - package-ecosystem: nuget
-    directory: /LoggingExtensions
-    schedule:
-      interval: weekly
-  - package-ecosystem: nuget
-    directory: /LoggingExtensions.Demo
-    schedule:
-      interval: weekly
-  - package-ecosystem: nuget
-    directory: /LoggingExtensions.Test
+    directories:
+      - /LoggingExtensions
+      - /LoggingExtensions.Demo
+      - /LoggingExtensions.Test
     schedule:
       interval: weekly
   - package-ecosystem: github-actions
